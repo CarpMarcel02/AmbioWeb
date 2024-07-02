@@ -1,0 +1,19 @@
+#bottom-image-container {
+    position: relative;
+    z-index: 4; /* Ensure bottom image is above the overlay */
+    width: 100%; /* Full width of the container */
+    display: flex;
+    /* justify-content: center; Center the image horizontally */
+    margin-top: 20px; /* Add some margin for spacing */
+  }
+  
+
+
+#bottom-image {
+  width: 100%;
+  /* max-height: 90vh;  */
+  height: auto; 
+  /* object-fit: cover;ASTA ERA COMENTAT */
+  border-radius: 10px; 
+  
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambio Events</title>
+  <link rel="icon" type="image/png" href="/Assets/AbioLogo.png">
+
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/header.css">
+  <link rel="stylesheet" href="CSS/firstpic.css">
+  <link rel="stylesheet" href="CSS/lastpic.css">
+  <link rel="stylesheet" href="CSS/video.css">
+  
+
+
+  <style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+     overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* Start with transparent black */
+  pointer-events: none;
+  transition: background-color 0.5s ease; /* Transition on background color */
+  z-index: 1; /* Ensure overlay is above other content */
+}
+
+  #firefliesCanvas {
+    position: absolute; /* Ensure canvas is absolute to the container */
+    top: -250px; /* Move canvas 20px above the container */
+    left: -20px; /* Move canvas 20px left of the container */
+    width: calc(100% + 40px); /* Increase width by 40px */
+    height: calc(100% + 320px); /* Increase height by 40px */
+    z-index: 0; /* Ensure canvas is below the overlay */
+    background: rgba(0, 0, 0, 0); /* Add a semi-transparent background to the canvas */
+}
+  </style>
+
+
+</head>
+<body>
+  <div class="content">
+ 
+              <header >
+                <div class="logo-container">
+                    <img src="Assets/AbioLogo.png" alt="Events Hall Logo">
+                </div>
+                <div class="gold-line"></div>
+               </header>
+
+            <div class="video-container">
+                <video id="background-video" muted autoplay>
+                    <source src="Assets/AmbioVideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+           
+              <div id="second-pic-container">
+                  <img id="second-pic" src="Assets/TheWall3nd.png" alt="Picture Wall">
+                <div id="first-pic-container">
+                  <img id="first-pic" src="Assets/AmbioPic2.jpg" alt="Last frame of the video">
+                </div>
+              </div>
+            
+
+        <div id="information">
+          <p>Știm că ai un vis...</p> Știm că ai un vis
+          Mai știm și că acesta este important pentru tine, iar din acest vis, îți rămân pentru totdeauna amintiri, poze, filmări și nu în ultimul rând, sentimente…
+          
+          De aceea, Ambio Events a creat un loc special pentru îndeplinirea acestor visuri, un loc pentru evenimente ALTFEL, pentru și cu oameni faini. Un spațiu pentru socializare, relaxare și împlinirea dorințelor tale.
+          
+          Îți propunem
+          pentru primul dans în doi, sub ochii fericiți ai familiei și ai prietenilor, o sală cu design nordic, minimalist și avangardist. Într-o așezare intimă, înconjurată de pădure, liniște și aer curat, cu o capacitate de 150 de invitați, ring de dans, bar și unități de cazare, Ambio Events conturează pe malul lacului Ezăreni ambianța mult dorită. Îți punem la dispoziție un spațiu în culori inspirate din natură, ce transmite prospețime și calmitate, spațiu ce poate fi decorat cu dans și voie bună.
+          
+          
+          
+          Continuând în aceeași atmosferă, ajungem în grădină – un loc unic, inedit, plin de verde și culori pale care subliniază și mai mult sentimentul de entuziasm și relaxare. Vă propunem grădina Ambio pentru cununia civilă, pe malul lacului, un loc amenajat cu accente de design elegante și rafinate. De asemenea, am amenajat în gradină un foișor, unde elementele naturale se împletesc cu obiecte de mobilier. O masă lungă din lemn, într-un cadru italian – toscan, unde eleganța se întâlnește cu căldura și apropierea de natură, aceasta fiind piesa centrală pentru evenimentele pe timp de zi.
+          
+          Iar pentru ca totul să fie perfect în ziua voastră specială, am contractat exclusiv furnizori de excepție pentru mâncărurile pe care le puteți servi în timpul evenimentului.
+          
+          Colaboratorii noștrii produc 90% din preparatele culinare din ingrediente naturale, obținute din fermele proprii.
+          
+          
+          
+          Așadar, ne dorim să facem parte din povestea voastră, din visul vostru și să-l facem să devină realitate. Pășește alături de noi într-un loc cu adevărat aparte, nu doar datorită amplasamentului deosebit, ci și a oamenilor care îl îmbogățesc prin experiența lor în crearea de evenimente altfel, prin gândirea în afara tiparelor și dorința de a prezenta ceva cu totul nou.
+          
+          Doar visează, spune-ne și noi vom da viață gândurilor tale.
+          PS –  Bine ai venit în lumea evenimentelor AMBIO!
+
+         </div>
+         <div style="height: 700vh;"></div>
+
+          <div id="bottom-image-container">
+            <img id="bottom-image" src="Assets/Tort-Fade.png" alt="Another image">
+            <canvas id="firefliesCanvas"></canvas>
+
+          </div>
+          
+
+  </div>
+  <div class="overlay"></div>
+
+  <script src="JS/script.js"></script>
+  <script src="JS/header.js"></script>
+  <script src="JS/fireflies.js"></script>
+  <script src="JS/video.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+
+#second-pic-container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden; /* Add this to prevent overflow */
+  margin-top: -20px;
+}
+
+#second-pic {
+  width: 100%;
+  height: auto;
+}
+
+#first-pic-container {
+  width: 80%; /* Adjust this value to control the width of the first pic */
+  position: absolute;
+  top: 125px; /* Adjust this value to control the vertical positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: #e0e0e0; 
+  padding: 20px;
+  transition: opacity 2s ease-out;
+  z-index: 2;
+  border-radius: 5px;
+
+  
+}
+
+#first-pic {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 980px) {
+  #first-pic-container {
+    width: 70%;
+    top: 120px; /* Adjust this value for responsiveness */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    padding: 13px;
+
+  }
+
+  #second-pic-container {
+    width: 100%;
+    overflow: hidden; /* Ensure no overflow */
+    margin-top: 40; /* Adjust the top margin to control the vertical position */
+  }
+
+  #second-pic {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  #first-pic-container {
+    width: 70%;
+    top: 50px; /* Adjust this value for responsiveness */
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 10px;
+
+  }
+
+  #second-pic-container {
+    width: 100%;
+    overflow: hidden; /* Ensure no overflow */
+    margin-top: 50px; /* Adjust the top margin to control the vertical position */
+  }
+
+  #second-pic {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Custom Media Queries for your specific needs */
+@media (max-width: 600px) {
+  #first-pic-container {
+    width: 70%;
+    top: 40px; /* Adjust this value for responsiveness */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+
+  }
+
+  #second-pic-container {
+    width: 100%;
+    overflow: hidden; /* Ensure no overflow */
+    margin-top: 65px; /* Adjust the top margin to control the vertical position */
+  }
+
+  #second-pic {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 480px) {
+  #first-pic-container {
+    width: 60%;
+    top: 55px; /* Adjust this value for responsiveness */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+
+  }
+
+  #second-pic-container {
+    width: 100%;
+    overflow: hidden; /* Ensure no overflow */
+    margin-top: 45px; /* Adjust the top margin to control the vertical position */
+  }
+
+  #second-pic {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 320px) {
+  #first-pic-container {
+    width: 45%;
+    top: 55px; /* Adjust this value for responsiveness */
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 2px;
+
+  }
+
+  #second-pic-container {
+    width: 100%;
+    overflow: hidden; /* Ensure no overflow */
+    margin-top: 45px; /* Adjust the top margin to control the vertical position */
+  }
+
+  #second-pic {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,54 @@
+.logo-container img {
+    max-width: 200px;
+    height: auto;
+  }
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.gold-line {
+    height: 10px;
+    width: 100%; /* Full width */
+    background: linear-gradient(90deg, #9a5916 0%, #e4b04d 20%, #fff1a3 40%, #e7b14f 60%, #ae6f27 80%, #f8c65d 100%);
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.75), 0 0 20px rgba(255, 204, 0, 0.5), 0 0 30px rgba(255, 204, 0, 0.25);
+    /* border-radius: 5px; Rounded corners */
+    margin: 0; /* No margin */
+    padding: 0;
+    position: relative; /* Ensure ::before is relative to this element */
+
+  }
+.gold-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%; /* Adjust width to 200% to avoid horizontal scroll */
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    animation: shine 3s infinite;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Initial solid background color */
+    z-index: 6; /* Ensure the header is above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
